@@ -1,0 +1,407 @@
+/* =========================================
+   БАЗОВЫЕ ПЕРЕМЕННЫЕ ТЕМЫ
+========================================= */
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --accent: #0f62fe;
+  --text: #0b1220;
+  --muted: #6b7280;
+}
+
+/* Тёмная тема */
+body.dark {
+  --bg: #0b0f14;
+  --card: #111820;
+  --accent: #6cc4ff;
+  --text: #e6eef8;
+  --muted: #97a3b0;
+}
+
+/* =========================================
+   ОСНОВА
+========================================= */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+.site-header {
+  background: linear-gradient(90deg, #0b1324, #0d1a2b);
+  color: #fff;
+  padding: 14px 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================================
+   HERO
+========================================= */
+.hero {
+  text-align: center;
+  padding: 60px 10px;
+  background: linear-gradient(180deg, #0b1324 0%, #16304a 70%);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* =========================================
+   КНОПКИ
+========================================= */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(15, 98, 254, 0.25);
+  color: var(--text);
+}
+
+.small {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* =========================================
+   УСЛУГИ
+========================================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(12, 20, 30, 0.12);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(12, 20, 30, 0.18);
+}
+
+.card .icon {
+  font-size: 42px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card-foot {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+/* =========================================
+   БЛОКИ-СЕКЦИИ
+========================================= */
+.block {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* =========================================
+   КАЛЬКУЛЯТОР
+========================================= */
+.calc {
+  display: grid;
+  gap: 12px;
+}
+
+.options label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* =========================================
+   ФОРМЫ ЗАПИСИ
+========================================= */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-grid textarea {
+  grid-column: span 2;
+}
+
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  gap: 8px;
+}
+
+/* =========================================
+   ГАЛЕРЕЯ
+========================================= */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   FAQ
+========================================= */
+.faq-list details {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* =========================================
+   ОТЗЫВЫ
+========================================= */
+.reviews blockquote {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   КОНТАКТЫ
+========================================= */
+.quick-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* =========================================
+   МОДАЛКА
+========================================= */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* =========================================
+   ФУТЕР
+========================================= */
+.site-footer {
+  padding: 18px;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+/* =========================================
+   АДАПТИВНОСТЬ
+========================================= */
+@media(max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 700px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #0d1a2b;
+    padding: 12px;
+    border-radius: 10px;
+    position: absolute;
+    right: 12px;
+    top: 70px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   АНИМАЦИИ ПРИ ПРОКРУТКЕ
+========================================= */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: 0.5s ease;
+}
+
+[data-animate].in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Компактные, но читаемые карточки пакетных предложений */
+.package-card {
+  transform: scale(0.90); /* уменьшены, но не слишком */
+  padding: 14px !important;
+}
+
+.package-card .icon {
+  font-size: 30px; /* крупнее для восприятия */
+}
+
+.package-card h3 {
+  font-size: 18px; /* крупнее для чтения */
+  margin-bottom: 6px;
+}
+
+.package-card p strong {
+  font-size: 17px; /* читаемая цена */
+}
+
+.package-card ul li {
+  font-size: 15px; /* увеличил — теперь отлично читается */
+  line-height: 1.35;
+  margin-bottom: 5px;
+}
+
+.package-card .card-foot {
+  margin-top: 12px;
+}
+
+.package-card .card-foot .btn {
+  padding: 5px 10px;
+  font-size: 13px; /* кнопки аккуратные, но читаемые */
+}
+
+
+

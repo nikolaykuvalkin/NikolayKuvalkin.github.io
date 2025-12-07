@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Компьютерный мастер — ремонт и сборка ПК</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="logo">Компьютерный мастер</div>
+
+      <nav class="main-nav" id="nav">
+        <a href="#services">Услуги</a>
+        <a href="#packages">Пакеты</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#booking">Запись</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="actions">
+        <button id="themeToggle" class="icon-btn">🌓</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Профессиональные компьютерные услуги</h1>
+      <p>Ремонт, настройка, чистка, сборка и апгрейд компьютеров — быстро и с гарантией.</p>
+
+      <div class="hero-cta">
+        <a class="btn" href="#calculator">Рассчитать стоимость</a>
+        <a class="btn ghost" href="#booking">Записаться онлайн</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container services">
+    <h2>Услуги</h2>
+
+    <div class="cards">
+
+      <article class="card" data-service="install">
+        <div class="icon">🖥️</div>
+        <h3>Установка и настройка ПО</h3>
+        <ul>
+          <li>Установка Windows 10/11 — <strong>от 1000 ₽</strong></li>
+          <li>Настройка Windows — <strong>500 ₽</strong></li>
+          <li>Установка драйверов — <strong>500 ₽</strong></li>
+          <li>Установка пакета программ — <strong>от 500 ₽</strong></li>
+          <li>Чистка от вирусов — <strong>от 500 ₽</strong></li>
+          <li>Перенос данных — <strong>от 800 ₽</strong></li>
+        </ul>
+        <div class="card-foot">
+          <button class="btn small details-btn">Подробнее</button>
+          <button class="btn small ghost book-btn">Записаться</button>
+        </div>
+      </article>
+
+      <article class="card" data-service="build">
+        <div class="icon">🛠️</div>
+        <h3>Сборка и апгрейд ПК</h3>
+        <ul>
+          <li>Подбор конфигурации — <strong>бесплатно</strong></li>
+          <li>Сборка ПК — <strong>от 3000 ₽</strong></li>
+          <li>Сборка из ваших деталей — <strong>от 2000 ₽</strong></li>
+          <li>Апгрейд — <strong>от 1500 ₽</strong></li>
+          <li>Замена термопасты — <strong>500 / 800 ₽</strong></li>
+          <li>Замена БП/корпуса — <strong>1000 ₽</strong></li>
+        </ul>
+        <div class="card-foot">
+          <button class="btn small details-btn">Подробнее</button>
+          <button class="btn small ghost book-btn">Записаться</button>
+        </div>
+      </article>
+
+      <article class="card" data-service="repair">
+        <div class="icon">🔧</div>
+        <h3>Диагностика и ремонт</h3>
+        <ul>
+          <li>Диагностика — <strong>500 ₽</strong> (бесплатно при ремонте)</li>
+          <li>Ремонт — <strong>от 1500 ₽</strong></li>
+          <li>Ремонт разъёмов — <strong>от 1000 ₽</strong></li>
+        </ul>
+        <div class="card-foot">
+          <button class="btn small details-btn">Подробнее</button>
+          <button class="btn small ghost book-btn">Записаться</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <div id="packages">
+  <h2 style="margin-top:30px;">Пакетные предложения</h2>
+
+  <div class="cards">
+    ... карточки ...
+  </div>
+</div>
+
+<div class="cards">
+  
+  <article class="card package-card" data-service="pack-games">
+    <div class="icon">🎮</div>
+    <h3>Под ключ для игр</h3>
+    <p><strong>от 4000 ₽</strong></p>
+    <ul>
+      <li>Подбор конфигурации</li>
+      <li>Сборка ПК</li>
+      <li>Установка Windows</li>
+      <li>Установка драйверов</li>
+      <li>Установка игровых клиентов</li>
+    </ul>
+  </article>
+
+  <article class="card package-card" data-service="pack-office">
+    <div class="icon">💼</div>
+    <h3>Офисный старт</h3>
+    <p><strong>от 3000 ₽</strong></p>
+    <ul>
+      <li>Сборка ПК</li>
+      <li>Установка Windows</li>
+      <li>Установка офисного пакета</li>
+    </ul>
+  </article>
+
+  <article class="card package-card" data-service="pack-upgrade">
+    <div class="icon">🔧</div>
+    <h3>Вторая жизнь (апгрейд)</h3>
+    <p><strong>от 3000 ₽ + детали</strong></p>
+    <ul>
+      <li>Диагностика</li>
+      <li>Апгрейд комплектующих</li>
+      <li>Перенос системы</li>
+      <li>Чистка и обслуживание</li>
+    </ul>
+  </article>
+
+</div>
+
+  <!-- CALCULATOR -->
+  <section id="calculator" class="container block">
+    <h2>Интерактивный калькулятор стоимости</h2>
+
+    <form id="calcForm" class="calc">
+      <label>
+        Выберите категорию:
+        <select id="calcService">
+          <option value="install">Установка и настройка</option>
+          <option value="build">Сборка / апгрейд</option>
+          <option value="repair">Диагностика / ремонт</option>
+        </select>
+      </label>
+
+      <label>
+        Опции:
+        <div class="options">
+          <label><input type="checkbox" name="opt" value="os"> Установка ОС (1000)</label>
+          <label><input type="checkbox" name="opt" value="drivers"> Драйверы (500)</label>
+          <label><input type="checkbox" name="opt" value="apps"> Программы (500)</label>
+          <label><input type="checkbox" name="opt" value="virus"> Чистка вирусов (500)</label>
+          <label><input type="checkbox" name="opt" value="data"> Перенос данных (800)</label>
+        </div>
+      </label>
+
+      <label>
+        Выезд мастера:
+        <select id="visit">
+          <option value="0">Нет</option>
+          <option value="100">В пределах района — 100 ₽</option>
+          <option value="500">За город — 500 ₽</option>
+        </select>
+      </label>
+
+      <div class="calc-result">
+        Итог: <strong id="calcTotal">0 ₽</strong>
+      </div>
+
+      <div class="calc-actions">
+        <button type="button" class="btn" id="calcCompute">Рассчитать</button>
+        <button type="button" class="btn ghost" id="calcBook">Записаться</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking" class="container block">
+    <h2>Онлайн-запись мастера</h2>
+
+    <form id="bookingForm" class="form-grid">
+      <input name="name" placeholder="Ваше имя" required>
+      <input name="contact" placeholder="Контакт" required>
+
+      <select name="service" id="bookingService">
+        <option value="install">Установка ПО</option>
+        <option value="build">Сборка / апгрейд</option>
+        <option value="repair">Диагностика / ремонт</option>
+      </select>
+
+      <input type="datetime-local" name="date" required>
+      <textarea name="notes" placeholder="Комментарий"></textarea>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Отправить</button>
+        <button type="button" id="bookWhatsapp" class="btn ghost">WhatsApp</button>
+      </div>
+
+      <p id="bookingMsg" class="muted"></p>
+    </form>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="container block">
+    <h2>Галерея работ</h2>
+    <div class="gallery-grid" id="galleryGrid">
+      <img src="https://via.placeholder.com/400x250?text=1">
+      <img src="https://via.placeholder.com/400x250?text=2">
+      <img src="https://via.placeholder.com/400x250?text=3">
+      <img src="https://via.placeholder.com/400x250?text=4">
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="container block">
+    <h2>FAQ</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>Какая гарантия?</summary>
+        <p>Гарантия 30 дней на работу мастера.</p>
+      </details>
+
+      <details>
+        <summary>Вы приезжаете домой?</summary>
+        <p>Да, возможен выезд мастера.</p>
+      </details>
+
+      <details>
+        <summary>Как оплатить?</summary>
+        <p>Наличными или переводом.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container block">
+    <h2>Контакты</h2>
+
+    <p>Телефон: <a href="tel:+79000000000">+7 (900) 122-89-81</a></p>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+
+    <div class="quick-actions">
+      <a class="btn" target="_blank" href="https://t.me/plusstopitsot">Telegram</a>
+      <a class="btn" target="_blank" href="https://wa.me/79001228981">WhatsApp</a>
+    </div>
+
+    <iframe
+  src="https://yandex.ru/map-widget/v1/?ll=40.044245%2C47.417601&z=18&pt=40.044245,47.417601,pm2rdm"
+  width="100%"
+  height="300"
+  frameborder="0"
+  style="border-radius:12px;">
+</iframe>
+
+
+
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Компьютерный мастер
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <h3 id="modalTitle">Услуга</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal success-modal" aria-hidden="true">
+    <div class="modal-content success-content">
+      <button class="modal-close" aria-label="Закрыть">✕</button>
+      <div class="success-check">✔</div>
+      <h3>Заявка отправлена</h3>
+      <p>Спасибо! Мы получили вашу заявку и свяжемся с вами в ближайшее время.</p>
+      <div class="modal-actions">
+        <button id="openChatBtn" class="btn">Открыть чат в Telegram</button>
+        <button id="closeSuccessBtn" class="btn ghost">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+<audio id="sendSound" src="multimedia-message-arrival-sound.wav" preload="auto"></audio>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>
